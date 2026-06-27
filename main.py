@@ -30,3 +30,5 @@ ds = load_dataset("timdettmers/openassistant-guanaco", split="train")
 ds = ds.map(convert_to_sharegpt)
 
 print(ds['conversations'][0])
+
+ds.push_to_hub("Muhammadreza/Guanaco-ShareGPT")
