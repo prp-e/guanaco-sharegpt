@@ -27,3 +27,4 @@ def convert_to_sharegpt(example):
     }
 
 ds = load_dataset("timdettmers/openassistant-guanaco", split="train")
+ds = ds.map(convert_to_sharegpt)
